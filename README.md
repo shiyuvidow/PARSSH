@@ -31,9 +31,9 @@ python fabric.py -i list
 # 主机组执行命令，命令请用双引号引起来，否则不识别
 python fabric.py -g group1 -m cmd -a "pwd"
 # 主机执行命令
-python fabric.py -i 172.30.150.30,172.30.150.33 -m cmd -a "ps -ef|grep nginx"
+python fabric.py -i 10.12.0.30,10.12.0.33 -m cmd -a "ps -ef|grep nginx"
 # 上传文件
 python fabric.py -g group2 -m put -s "E:/test" -d "/tmp/test"
 # 下载文件
-python fabric.py -i 172.30.150.29 -m get -s "/tmp/test" -d "test"
+python fabric.py -i 10.12.0.29 -m get -s "/tmp/test" -d "test"
 ```
